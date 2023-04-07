@@ -1,0 +1,14 @@
+<div>
+    <br>
+    <table class="center employee_table">
+        <th>Name</th>
+        <th id="time">Total Time in Month</th>
+        <th id="action">Actions</th>
+        <tr *ngFor="let employee of namesTime" [class.LessThanHundred]='employee["workingTime"]<100'>
+        <td>{{employee['name']}}</td>
+        <td id="time">{{employee['workingTime']}} hrs</td>
+        <td id="action"><a  href="">Edit</a></td>
+        </tr>
+    </table>
+</div>
+
